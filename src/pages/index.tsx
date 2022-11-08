@@ -42,9 +42,7 @@ const Example = () => {
                 nonce: DUMMY_NONCE,
             })
             const preparedMessage = message.prepareMessage()
-            const signature = await signMessageAsync({
-                message: preparedMessage,
-            })
+            const signature = await signer.signMessage(preparedMessage)
             if (signature !== SMART_WALLET_SIGNATURE) {
                 alert('no smart wallet used, aborting')
                 return
