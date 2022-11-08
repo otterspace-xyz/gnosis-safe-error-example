@@ -58,8 +58,6 @@ const Example = () => {
         }
     }, [address, chain?.id, isConnected, signMessageAsync, signer])
 
-    console.log(isConnected)
-
     return (
         <div>
             <h1>gnosis-error-example</h1>
