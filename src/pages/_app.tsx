@@ -9,7 +9,7 @@ const APP_NAME = 'Otterspace'
 
 const { chains, provider, webSocketProvider } = configureChains(
     [chain.mainnet, chain.optimism, chain.goerli],
-    [alchemyProvider({ apiKey: 'vVQ_s14wXim1zbwScqebPWjCLjyaZdHu' })]
+    [alchemyProvider()]
 )
 
 const { connectors } = getDefaultWallets({ appName: APP_NAME, chains })
