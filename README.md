@@ -15,6 +15,14 @@ _TODO_
 5. Run `yarn dev` to start a local development server
 6. Open [http://localhost:3000](http://localhost:3000) in your browser to open the web app
 
+### Where to find code
+
+Everything is inside src/pages/index.tsx
+
 ### How to reproduce error
 
-_TODO add details _
+1. Tap Connect Wallet Button.
+2. Connect Safe app using WalletConnect
+3. Tap "sign message via smart wallet"
+4. Go back to Safe app to sign the message.
+5. Notice the `SignMsg` event is not picked up so flow doesn't finish with `alert('success')`.
